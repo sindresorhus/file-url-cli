@@ -27,8 +27,3 @@ $ file-url --help
 ## Related
 
 - [file-url](https://github.com/sindresorhus/file-url) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
