@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const fileUrl = require('file-url');
+import process from 'node:process';
+import meow from 'meow';
+import fileUrl from 'file-url';
 
 const cli = meow(`
 	Usage
@@ -10,6 +10,8 @@ const cli = meow(`
 	Example
 	  $ file-url
 	  file:///Users/sindresorhus/dev/file-url
-`);
+`, {
+	importMeta: import.meta,
+});
 
 console.log(fileUrl(cli.input[0] || process.cwd()));

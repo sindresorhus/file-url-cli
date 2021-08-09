@@ -1,19 +1,21 @@
 {
 	"name": "file-url-cli",
 	"version": "2.0.0",
-	"description": "Convert a path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`",
+	"description": "Convert a path to a file URL: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`",
 	"license": "MIT",
 	"repository": "sindresorhus/file-url-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
 	"bin": {
-		"file-url": "cli.js"
+		"file-url": "./cli.js"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -31,12 +33,12 @@
 		"slash"
 	],
 	"dependencies": {
-		"file-url": "^3.0.0",
-		"meow": "^5.0.0"
+		"file-url": "^4.0.0",
+		"meow": "^10.1.1"
 	},
 	"devDependencies": {
-		"ava": "^2.1.0",
-		"execa": "^2.0.3",
-		"xo": "^0.24.0"
+		"ava": "^3.15.0",
+		"execa": "^5.1.1",
+		"xo": "^0.44.0"
 	}
 }
